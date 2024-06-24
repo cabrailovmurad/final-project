@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import MainBanner from './MainBanner';
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+<main className='main'>
+    <MainBanner />
+</main>
+};
 
-export default Home
+export default Home;

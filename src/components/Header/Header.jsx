@@ -2,6 +2,8 @@ import React from 'react'
 import Logo from '../Logo/Logo';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { MENU } from '../../utils/constants';
+import { Link } from 'react-router-dom';
+import Socials from '../Socials/Socials';
 
 
 
@@ -12,13 +14,17 @@ const Header = () => (
 <Logo />
 <nav className='menu'>
 
-{MENU.map(({link,name})=>
-<ScrollAnimation key={link} className='menu-item'>
+{MENU.map(({link,name},i)=>
+<ScrollAnimation key={link} className='menu-item' animateIn='fadeInDown' delay={i*100}
+offset={0}>
+<Link to={`/${link}`}>{name}
 
+</Link>
 </ScrollAnimation>
 )}
 
 </nav>
+<Socials />
 
         </header>
     </div>

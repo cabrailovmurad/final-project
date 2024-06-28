@@ -2,6 +2,9 @@ import { Routes, Route } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
+import About from "./Pages/About";
+import Project from "./Pages/Project";
+import ProjectDetails from "./Pages/ProjectDetails";
 import './App.scss'
 import { library } from "@fortawesome/fontawesome-svg-core";
 
@@ -64,7 +67,9 @@ function App() {
         <Route path="/" element={<MainLayout/>}>
         <Route path="/" element={<Home/>}/>
         <Route path="/contact" element={<Contact/>}/>
-        
+        <Route path="/about" element={<About/>}/>
+        <Route path="/project" element={<Project/>}/>
+        <Route path="/project-details" element={<ProjectDetails/>}/>
         
         </Route>
       </Routes>

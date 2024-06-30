@@ -8,7 +8,7 @@ import WishListProvider from "./Context/WishListContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <React.Fragment>
     <UserProvider>
       <WishListProvider>
         <HelmetProvider>
@@ -18,5 +18,5 @@ root.render(
         </HelmetProvider>
       </WishListProvider>
     </UserProvider>
-  </React.StrictMode>
+  </React.Fragment>
 );

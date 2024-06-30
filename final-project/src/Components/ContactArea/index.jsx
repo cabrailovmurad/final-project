@@ -21,17 +21,17 @@ function ContactArea() {
           <div className="contact-area__bottom__left">
             <ContactAreaInfoItem
               icon="fa-solid fa-house"
-              h="California, United States"
+              h="Samaxinka, Azerbaijan"
               p="Santa monica bullevard"
             />
             <ContactAreaInfoItem
               icon="fa-solid fa-phone"
-              h="00 (440) 9865 562"
+              h="+994 (77)3887337"
               p="Mon to Fri 9am to 6 pm"
             />
             <ContactAreaInfoItem
               icon="fa-solid fa-envelope"
-              h="support@colorlib.com"
+              h="dmurad908@gmail.com"
               p="Send us your query anytime!"
             />
           </div>

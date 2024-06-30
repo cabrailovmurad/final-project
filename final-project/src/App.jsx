@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
 import MainLayout from "./layout/MainLayout";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
@@ -12,9 +13,7 @@ import UserUpdate from "./Pages/UserUpdatePage";
 import CreateUser from "./Pages/CreateUserPage";
 import AllUsers from "./Components/AdminPanelComponents/AllUsers";
 
-
-
-import './App.scss'
+import './App.scss';
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
@@ -51,9 +50,6 @@ import CategoryPage from "./Pages/CategoryPage";
 import Blog from "./Pages/BlogPage";
 import WishList from "./Pages/WishListPage";
 
-
-
-
 library.add(
   faFacebookF,
   faTwitter,
@@ -79,51 +75,44 @@ library.add(
 );
 
 function App() {
+  useEffect(() => {
+    // Вставьте ваш код чата сюда
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function(){
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6681790eeaf3bd8d4d168ae5/1i1ks1oea';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  }, []);
+
   return (
-      <Routes>
-        <Route path="/" element={<MainLayout/>}>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/project" element={<Project/>}/>
-        <Route path="/blog" element={<Blog/>}/>
-        <Route path="/project-details" element={<ProjectDetails/>}/>
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/project-details" element={<ProjectDetails />} />
         <Route path="/furniturebycategory/:id" element={<CategoryPage />} />
-        <Route path="/wishlist" element={<WishList />}/>
-
-        
-        </Route>
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/login/help" element={<LoginHelp />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/AdminPanel" element={<AdminPanel />}>
-            <Route path="/AdminPanel/Users" element={<AllUsers />} />
-            <Route
-              path="/AdminPanel/Users/Update/:id"
-              element={<UserUpdate />}
-            />
-            <Route
-              path="/AdminPanel/Users/CreateUser"
-              element={<CreateUser />}
-            />
-            <Route path="/AdminPanel/Furniture" element={<AllFurniture />} />
-            <Route
-              path="/AdminPanel/FurnitureCategories"
-              element={<AllFurnitureCategory />}
-            />
-              <Route
-              path="/AdminPanel/FurnitureCategories/Update/:id"
-              element={<FurnitureCategoryUpdate />}
-            />
-            <Route
-              path="/AdminPanel/FurnitureCategories/CreateCategory"
-              element={<CreateFurnitureCategory />}
-            />
-            </Route>
-
-
-
-      </Routes>
+        <Route path="/wishlist" element={<WishList />} />
+      </Route>
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/login/help" element={<LoginHelp />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/AdminPanel" element={<AdminPanel />}>
+        <Route path="/AdminPanel/Users" element={<AllUsers />} />
+        <Route path="/AdminPanel/Users/Update/:id" element={<UserUpdate />} />
+        <Route path="/AdminPanel/Users/CreateUser" element={<CreateUser />} />
+        <Route path="/AdminPanel/Furniture" element={<AllFurniture />} />
+        <Route path="/AdminPanel/FurnitureCategories" element={<AllFurnitureCategory />} />
+        <Route path="/AdminPanel/FurnitureCategories/Update/:id" element={<FurnitureCategoryUpdate />} />
+        <Route path="/AdminPanel/FurnitureCategories/CreateCategory" element={<CreateFurnitureCategory />} />
+      </Route>
+    </Routes>
   );
 }
 

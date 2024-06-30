@@ -14,7 +14,7 @@ function Footer() {
           </p>
           <p>
             Copyright ©2023 All rights reserved | This template is made with by{" "}
-            <a href="/#"> Colorlib</a>
+            <a href="/#"> Juvanbur</a>
           </p>
         </div>
         <div className="footer__center">

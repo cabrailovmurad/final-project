@@ -14,11 +14,16 @@ function Portfolio() {
             />
           </div>
           <div className="portfolio__top__right">
-            <h4>LAVENDAR AMBIENT COLORLIB</h4>
+            <h4>LAVENDAR AMBIENT</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation.
+            Luxury Comfort Sofa
+
+Introducing our Luxury Comfort Sofa, the perfect blend of elegance, comfort, and durability. Designed to enhance any living space, this sofa offers unparalleled quality and style.
+
+Features and Benefits:
+Superior Comfort: The sofa is upholstered with high-density foam cushions, providing exceptional comfort and support. The plush seating ensures you can relax for hours in ultimate luxury.
+
+Premium Materials: Crafted from top-grade materials, this sofa features a sturdy hardwood frame that guarantees long-lasting durability. The high-quality fabric upholstery is soft to the touch, yet resistant to wear and tear, ensuring your sofa looks new for years.
             </p>
             <ul>
               <li>
@@ -38,6 +43,9 @@ function Portfolio() {
               </li>
               <li>
                 <span>Completed</span>: 17 Aug 2074
+              </li>
+              <li>
+                <span>Price</span>:200$
               </li>
             </ul>
           </div>

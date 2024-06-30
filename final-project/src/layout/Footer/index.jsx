@@ -13,7 +13,7 @@ function Footer() {
             growth. The more effort you put into improving your skills,
           </p>
           <p>
-            Copyright ©2023 All rights reserved | This template is made with by{" "}
+            Copyright ©2079 All rights reserved | This template is made with by{" "}
             <a href="/#"> Juvanbur</a>
           </p>
         </div>
@@ -27,7 +27,8 @@ function Footer() {
         </div>
         <div className="footer__right">
           <h3>FOLLOW ME</h3>
-          <p>Let us be social</p>
+          <p> IG :murad20_18 </p>
+          
           <ul className="footer__right__icons">
           <li>
             <FontAwesomeIcon icon="fa-brands fa-facebook-f" />
@@ -40,6 +41,9 @@ function Footer() {
           </li>
           <li>
             <FontAwesomeIcon icon="fa-brands fa-behance" />
+          </li>
+          <li>
+            
           </li>
         </ul>
         </div>

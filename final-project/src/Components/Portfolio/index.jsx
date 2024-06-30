@@ -31,24 +31,20 @@ function Portfolio() {
                 <FontAwesomeIcon icon="fa-solid fa-star" />
               </li>
               <li>
-                <span>Client</span>: colorlib
+                <span>Client</span>: MuradStudio
               </li>
               <li>
-                <span>Website</span>: colorlib.com
+                <span>Website</span>: woodrex.az
               </li>
               <li>
-                <span>Completed</span>: 17 Aug 2018
+                <span>Completed</span>: 17 Aug 2074
               </li>
             </ul>
           </div>
         </div>
         <div className="portfolio__bottom">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit.
+          Furniture Today Modern furniture combines style, comfort, and innovation. We offer a diverse range of products, from classic to contemporary models, ensuring there's something for everyone's taste and needs.
           </p>
           <p>
             Voluptate velit esse cillum dolore eu fugiat nulla pariatur.

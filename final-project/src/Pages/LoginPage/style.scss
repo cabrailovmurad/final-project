@@ -5,6 +5,8 @@
   justify-content: center;
   align-items: center;
   background-color: #527490;
+  
+  
   flex-direction: column;
   gap: 10px;
 
@@ -92,8 +94,19 @@
         text-decoration: underline;
       }
       .errorMessage {
-        color: darkred;
-        font-weight: bold;
+        font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  color: #ff0000;
+  background-color: #ffeeee;
+  padding: 20px;
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+  margin: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
       }
     }
   }
